@@ -1,4 +1,4 @@
-function convertToJason(res){
+function convertToJson(res){
     if (res.ok){
         return res.json();
 
@@ -17,7 +17,7 @@ export default class ProductData {
 
 getData() {
     return fetch(this.path)
-    .then(convertToJason).then((data) => data);
+    .then(convertToJson).then((data) => data);
 
 }
 async findProductById(id){
