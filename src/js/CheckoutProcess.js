@@ -1,5 +1,5 @@
-import { getLocalStorage } from "./utils";
-import ExternalServices from "./ExternalServices";
+import { getLocalStorage } from './utils.js';
+import ExternalServices from './ExternalServices.js';
 
 const services = new ExternalServices();
 function formDataToJSON(formElement) {
