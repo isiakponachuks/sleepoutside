@@ -37,6 +37,7 @@ export default class ProductList {
         this.listElement.innerHTML = '';
         const template = document.getElementById('product-card-template');
         renderListWithTemplate(template, this.listElement, list, this.prepareTemplate);
+    }
        // list.forEach(product => {
            // const clone = template.content.cloneNode(true);
             //const hydratedTemplate = this.prepareTemplate (clone, product);
@@ -48,4 +49,4 @@ export default class ProductList {
     
 
 
-}
+

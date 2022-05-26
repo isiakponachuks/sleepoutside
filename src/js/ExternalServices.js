@@ -8,7 +8,7 @@ function convertToJson(res){
     }
 }
 
-export default class ProductData {
+export default class ExternalServices {
     constructor() {
       //  this.category = category;
         //this.path = `../json/${this.category}.json`;
@@ -18,7 +18,7 @@ export default class ProductData {
 
 getData(category) {
     return fetch(baseURL + `products/search/${category}`)
-    .then(convertToJson).then((data) => Result);
+    .then(convertToJson).then((data) => data.Result);
 
 }
 async findProductById(id){
