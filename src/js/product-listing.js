@@ -1,4 +1,4 @@
-import ProductData from './productData.js';
+import ExternalServices from './ExternalServices.js';
 import ProductList from './productList.js';
 
 import { loadHeaderFooter, getParam } from './utils.js';
@@ -7,9 +7,9 @@ loadHeaderFooter();
 
 const category = getParam('category');
 
-// create an instance of our productdata class
+// create an instance of our externalservices class
 
-const dataSource = new ProductData();
+const dataSource = new ExternalServices();
 
 // element to be render in
 
